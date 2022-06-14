@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.indra</groupId>
+	<artifactId>Ejercicios_Amazon</artifactId>
+	<version>2.0.1-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<nexus.releases>https://slmaven.indra.es/nexus/repository/PDT_Release/</nexus.releases>
+		<nexus.snapshots>https://slmaven.indra.es/nexus/repository/PDT_Snapshot/</nexus.snapshots>
+		<nexus.central>https://slmaven.indra.es/nexus/repository/maven-central</nexus.central>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>serenity</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<repositories>
+				<repository>
+					<id>indra-maven-central</id>
+					<url>${nexus.central}</url>
+				</repository>
+				<repository>
+					<id>PDT_Release</id>
+					<url>${nexus.releases}</url>
+				</repository>
+				<repository>
+					<id>PDT_Snapshot</id>
+					<url>${nexus.snapshots}</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>indra-maven-central</id>
+					<url>${nexus.central}</url>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.indra.cilantrum</groupId>
+			<artifactId>cilantrum-driver</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.indra.cilantrum</groupId>
+			<artifactId>cilantrum-keywords</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.indra.cilantrum</groupId>
+			<artifactId>cilantrum-report</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.indra.cilantrum</groupId>
+			<artifactId>cilantrum-framework</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.indra.cilantrum</groupId>
+			<artifactId>cilantrum-utils</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+	</dependencies>
+</project>
