@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites retried="0" ignored="0" total="2" passed="2" failed="0" skipped="0">
-  <testsuite ignored="0" tests="2" failures="0" name="APIMADRID" time="5" errors="0" timestamp="1654599348155">
-    <testcase retried="0" name="TC001_-_Ejercicios_API_Ayuntamiento_de_Madrid_on_CHROME" time="3">
-    </testcase> <!-- TC001_-_Ejercicios_API_Ayuntamiento_de_Madrid_on_CHROME -->
-    <testcase retried="0" name="TC002_-_Ejercicios_API_Ayuntamiento_de_Madrid_on_CHROME" time="2">
-    </testcase> <!-- TC002_-_Ejercicios_API_Ayuntamiento_de_Madrid_on_CHROME -->
-  </testsuite> <!-- APIMADRID -->
+<testsuites retried="0" ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <testsuite ignored="0" tests="1" failures="0" name="EJERCICIOVODAFONE" time="11" errors="0" timestamp="1655204172762">
+    <testcase retried="0" name="TC001_-_Ejercicios_QA_Vodafone_on_CHROME" time="10">
+    </testcase> <!-- TC001_-_Ejercicios_QA_Vodafone_on_CHROME -->
+  </testsuite> <!-- EJERCICIOVODAFONE -->
 </testsuites>
