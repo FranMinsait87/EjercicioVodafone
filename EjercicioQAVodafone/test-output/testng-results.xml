@@ -1,67 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
-  <suite started-at="2022-06-07T12:55:48 CEST" name="APIMADRID" finished-at="2022-06-07T12:55:53 CEST" duration-ms="5839">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <suite started-at="2022-06-14T12:01:06 CEST" name="EJERCICIOVODAFONE" finished-at="2022-06-14T17:15:49 CEST" duration-ms="18882976">
     <groups>
     </groups>
-    <test started-at="2022-06-07T12:55:48 CEST" name="TC001 - Ejercicios API Ayuntamiento de Madrid on CHROME" finished-at="2022-06-07T12:55:51 CEST" duration-ms="3117">
-      <class name="com.indra.main.ayuntamientoMadrid.Ejercicios_API_Ayuntamiento_Madrid.test.TC_GetMuseo_REST">
-        <test-method is-config="true" signature="testSetup(org.testng.xml.XmlTest)[pri:0, instance:com.indra.main.ayuntamientoMadrid.Ejercicios_API_Ayuntamiento_Madrid.test.TC_GetMuseo_REST@38eb2fb0]" started-at="2022-06-07T12:55:48 CEST" name="testSetup" finished-at="2022-06-07T12:55:48 CEST" duration-ms="7" status="PASS">
+    <test started-at="2022-06-14T12:01:06 CEST" name="TC001 - Ejercicios QA Vodafone on CHROME" finished-at="2022-06-14T17:15:49 CEST" duration-ms="18882976">
+      <class name="com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone">
+        <test-method is-config="true" signature="testSetup(org.testng.xml.XmlTest)[pri:0, instance:com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone@6b760460]" started-at="2022-06-14T12:01:06 CEST" name="testSetup" finished-at="2022-06-14T12:01:06 CEST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.indra.cilantrum.framework.build.CilantrumXmlTest@c8310271]]>
+                <![CDATA[com.indra.cilantrum.framework.build.CilantrumXmlTest@f5277d8a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method signature="test()[pri:0, instance:com.indra.main.ayuntamientoMadrid.Ejercicios_API_Ayuntamiento_Madrid.test.TC_GetMuseo_REST@38eb2fb0]" started-at="2022-06-07T12:55:48 CEST" name="test" finished-at="2022-06-07T12:55:51 CEST" duration-ms="3094" status="PASS">
+        <test-method signature="test()[pri:0, instance:com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone@6b760460]" started-at="2022-06-14T12:01:06 CEST" name="test" finished-at="2022-06-14T17:15:49 CEST" duration-ms="18882739" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException
+at com.indra.cilantrum.framework.api.test.CilantrumTest.test(CilantrumTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at com.indra.cilantrum.framework.build.Build.execute(Build.java:118)
+at com.indra.cilantrum.framework.main.Main.executeBuild(Main.java:254)
+at com.indra.cilantrum.framework.main.Main.main(Main.java:72)
+at com.indra.cilantrum.framework.main.Main.launchBuild(Main.java:104)
+at com.indra.main.ejercicioVodafone.main.LaunchEjercicioVodafone.main(LaunchEjercicioVodafone.java:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="testTeardown(org.testng.ITestContext)[pri:0, instance:com.indra.main.ayuntamientoMadrid.Ejercicios_API_Ayuntamiento_Madrid.test.TC_GetMuseo_REST@38eb2fb0]" started-at="2022-06-07T12:55:51 CEST" name="testTeardown" finished-at="2022-06-07T12:55:51 CEST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestContext)[pri:0, instance:com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone@6b760460]" started-at="2022-06-14T17:15:49 CEST" name="testTeardown" finished-at="2022-06-14T17:15:49 CEST" duration-ms="161" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4489f60f]]>
+                <![CDATA[org.testng.TestRunner@21422231]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTeardown -->
-      </class> <!-- com.indra.main.ayuntamientoMadrid.Ejercicios_API_Ayuntamiento_Madrid.test.TC_GetMuseo_REST -->
-    </test> <!-- TC001 - Ejercicios API Ayuntamiento de Madrid on CHROME -->
-    <test started-at="2022-06-07T12:55:51 CEST" name="TC002 - Ejercicios API Ayuntamiento de Madrid on CHROME" finished-at="2022-06-07T12:55:53 CEST" duration-ms="2519">
-      <class name="com.indra.main.ayuntamientoMadrid.Ejercicios_API_Ayuntamiento_Madrid.test.TC_Busqueda_REST">
-        <test-method is-config="true" signature="testSetup(org.testng.xml.XmlTest)[pri:0, instance:com.indra.main.ayuntamientoMadrid.Ejercicios_API_Ayuntamiento_Madrid.test.TC_Busqueda_REST@8ed9cf]" started-at="2022-06-07T12:55:51 CEST" name="testSetup" finished-at="2022-06-07T12:55:51 CEST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.indra.cilantrum.framework.build.CilantrumXmlTest@409dca32]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSetup -->
-        <test-method signature="test()[pri:0, instance:com.indra.main.ayuntamientoMadrid.Ejercicios_API_Ayuntamiento_Madrid.test.TC_Busqueda_REST@8ed9cf]" started-at="2022-06-07T12:55:51 CEST" name="test" finished-at="2022-06-07T12:55:53 CEST" duration-ms="2514" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="testTeardown(org.testng.ITestContext)[pri:0, instance:com.indra.main.ayuntamientoMadrid.Ejercicios_API_Ayuntamiento_Madrid.test.TC_Busqueda_REST@8ed9cf]" started-at="2022-06-07T12:55:53 CEST" name="testTeardown" finished-at="2022-06-07T12:55:53 CEST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@41404aa2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTeardown -->
-      </class> <!-- com.indra.main.ayuntamientoMadrid.Ejercicios_API_Ayuntamiento_Madrid.test.TC_Busqueda_REST -->
-    </test> <!-- TC002 - Ejercicios API Ayuntamiento de Madrid on CHROME -->
-  </suite> <!-- APIMADRID -->
+      </class> <!-- com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone -->
+    </test> <!-- TC001 - Ejercicios QA Vodafone on CHROME -->
+  </suite> <!-- EJERCICIOVODAFONE -->
 </testng-results>
