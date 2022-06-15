@@ -1,0 +1,2 @@
+El código de la respuesta es: 404
+No existe ninguna criptomoneda con el id pepe

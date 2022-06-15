@@ -8,10 +8,8 @@ import com.indra.main.ejercicioVodafone.ejercicio1_Java.TC_Ejercicio1_Java;
 public class LaunchEjercicio1_Java {
 	
 		public static void main(String[] args) throws IOException {
-			
+		
 			new TC_Ejercicio1_Java();
-
 		}
-
 
 }

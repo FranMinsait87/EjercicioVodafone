@@ -1,22 +1,17 @@
 package com.indra.main.ejercicioVodafone.ejercicio1_Java;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URL;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.swing.JOptionPane;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
-
-import com.indra.cilantrum.messages.MessageLibrary;
 
 public class TC_Ejercicio1_Java {
 
@@ -24,6 +19,7 @@ public class TC_Ejercicio1_Java {
 
 	public TC_Ejercicio1_Java() throws IOException {
 
+		
 		// Se le pide el parámetro de búsqueda al usuario
 
 		String bitCoin = JOptionPane.showInputDialog(null,
@@ -39,9 +35,10 @@ public class TC_Ejercicio1_Java {
 		// Se extrae el código de la respuesta
 
 		int statusCode = connection.getResponseCode();
-
+		String mensaje=null;
+		
 		switch (statusCode) {
-
+		
 		case 200:
 
 			// Se crea el lector de respuesta del servicio
@@ -61,23 +58,43 @@ public class TC_Ejercicio1_Java {
 
 			JSONObject json = new JSONObject(responseContent.toString());
 			String dolar = json.getJSONObject("market_data").getJSONObject("current_price").get("usd").toString();
+			mensaje= "El código de la respuesta es: "+statusCode+"\nEl precio actual de " + bitCoin + " es " + dolar + " dolares";
+			// Se muestra un mensaje informativo al usuario del precio de la criptomoneda en dolares
 
-			// Se muestra un mensaje informativo al usuario del precio de la criptomoneda en
-			// dolares
-
-			JOptionPane.showMessageDialog(null, "El precio actual de " + bitCoin + " es " + dolar + " dolares");
+			JOptionPane.showMessageDialog(null, mensaje);		
+			crearReporte(mensaje);
+			
 			break;
 
 		case 404:
-			JOptionPane.showMessageDialog(null, "No existe ninguna criptomoneda con el id " + bitCoin,
-					"MENSAJE DE ERROR", JOptionPane.WARNING_MESSAGE);
+			mensaje= "El código de la respuesta es: "+statusCode+"\nNo existe ninguna criptomoneda con el id " + bitCoin;
+			JOptionPane.showMessageDialog(null, mensaje,"MENSAJE DE ERROR", JOptionPane.WARNING_MESSAGE);
+			crearReporte(mensaje);
 			break;
 
 		default:
-			JOptionPane.showMessageDialog(null, "Se ha obtenido una respuesta inesperada", "MENSAJE DE ERROR",
-					JOptionPane.WARNING_MESSAGE);
+			mensaje= "El código de la respuesta es: "+statusCode+"\nSe ha obtenido una respuesta inesperada ";
+			JOptionPane.showMessageDialog(null, mensaje , "MENSAJE DE ERROR", JOptionPane.WARNING_MESSAGE);
+			crearReporte(mensaje);
 
 		}
+	}
+	
+	//Creación de un archivo con el resultado del reporte.
+	public static void crearReporte(String reporte) throws IOException 
+	{
+        String ruta = "ReporteEjercicio1_Java.txt";
+        File file = new File(ruta);
+        
+        if (!file.exists()) {
+            file.createNewFile();
+        }
+        
+        FileWriter fw = new FileWriter(file);
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write(reporte);
+        bw.close();
+        
 	}
 
 }
