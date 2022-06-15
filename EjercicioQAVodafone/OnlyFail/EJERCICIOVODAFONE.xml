@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="EJERCICIOVODAFONE">
+  <parameter name="REPORT_FOLDER_PATTERN" value=""/>
+  <parameter name="url_base" value="https://api.coingecko.com/"/>
+  <parameter name="ENVIRONMENT" value=""/>
+  <parameter name="GLOBAL_REPORT_PATH" value="global/"/>
+  <parameter name="DEVICE_NAME" value="chrome"/>
+  <parameter name="GLOBAL_REPORT_FILE_PATTERN" value=""/>
+  <parameter name="INDIVIDUAL_REPORT_PATH" value="individual/"/>
+  <parameter name="PRIORITY" value="0"/>
+  <parameter name="EMAIL_FILES_TO_ATTACH" value="LastGlobalExecution.html;resources/tc-data.xls"/>
+  <parameter name="MANUAL_RUN_ESTIMATION_TIME" value=""/>
+  <parameter name="ONLYFAIL" value="true"/>
+  <parameter name="EMAIL_SUBJECT" value="Reporte - OneSait"/>
+  <parameter name="EMAIL_RECIPIENTS" value="rbarbosat@minsait.com"/>
+  <parameter name="SEND_EMAIL" value="false"/>
+  <parameter name="EMAIL_SERVER" value="smtp.indra.es"/>
+  <parameter name="EMAIL_ZIP_ATTACHMENTS" value="false"/>
+  <parameter name="TEST_NAME" value="Ejercicios QA Vodafone"/>
+  <parameter name="EMAIL_PASSWORD" value="DEC:{fFjU4zi3yYWWmaPDd8tGE1ZtG3eWSZb0}"/>
+  <parameter name="metodo" value="api/v3/coins/"/>
+  <parameter name="REPORT_INPUT_PARAMETERS" value=""/>
+  <parameter name="PARALLEL_MODE" value="false"/>
+  <parameter name="EMAIL_PORT" value="25"/>
+  <parameter name="TEST_CLASS" value="TC_EjercicioVodafone"/>
+  <parameter name="last_status" value="Passed"/>
+  <parameter name="BUILD_DATA_PATH" value="resources/tc-data.xls"/>
+  <parameter name="EMAIL_USER" value="cilantrumuser@indra.es"/>
+  <parameter name="TEST_ID" value="TC001"/>
+  <parameter name="REPORT_PATH" value="test-output/"/>
+  <parameter name="TEST_DESCRIPTION" value="Buscador de criptomonedas"/>
+  <parameter name="OTHERS_REPORT_PATH" value="others/"/>
+  <parameter name="SUITE_NAME" value="EJERCICIOVODAFONE"/>
+  <parameter name="CRITICALITY" value="true"/>
+  <parameter name="EMAIL_TEMPLATE_PATH" value=""/>
+  <parameter name="KAFKA_TOPIC" value=""/>
+  <parameter name="KAFKA_SERVERS" value=""/>
+  <parameter name="TAGS" value="[QAVodafone]"/>
+  <parameter name="SMALLER_REPORT" value="false"/>
+  <test thread-count="5" name="TC001 - Ejercicios QA Vodafone on CHROME" verbose="3">
+    <parameter name="TEST_CLASS" value="TC_EjercicioVodafone"/>
+    <parameter name="TEST_DESCRIPTION" value="Buscador de criptomonedas"/>
+    <parameter name="SUITE_NAME" value="EJERCICIOVODAFONE"/>
+    <parameter name="CRITICALITY" value="true"/>
+    <parameter name="url_base" value="https://api.coingecko.com/"/>
+    <parameter name="TEST_NAME" value="Ejercicios QA Vodafone"/>
+    <parameter name="last_status" value="Passed"/>
+    <parameter name="DEVICE_NAME" value="chrome"/>
+    <parameter name="PRIORITY" value="0"/>
+    <parameter name="TEST_ID" value="TC001"/>
+    <parameter name="metodo" value="api/v3/coins/"/>
+    <parameter name="TAGS" value="[QAVodafone]"/>
+    <classes>
+      <class name="com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone"/>
+    </classes>
+  </test> <!-- TC001 - Ejercicios QA Vodafone on CHROME -->
+</suite> <!-- EJERCICIOVODAFONE -->

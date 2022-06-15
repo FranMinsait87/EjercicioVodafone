@@ -1,30 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
-  <suite started-at="2022-06-14T12:56:12 CEST" name="EJERCICIOVODAFONE" finished-at="2022-06-14T12:56:23 CEST" duration-ms="10684">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <suite started-at="2022-06-14T12:01:06 CEST" name="EJERCICIOVODAFONE" finished-at="2022-06-14T17:15:49 CEST" duration-ms="18882976">
     <groups>
     </groups>
-    <test started-at="2022-06-14T12:56:12 CEST" name="TC001 - Ejercicios QA Vodafone on CHROME" finished-at="2022-06-14T12:56:23 CEST" duration-ms="10684">
+    <test started-at="2022-06-14T12:01:06 CEST" name="TC001 - Ejercicios QA Vodafone on CHROME" finished-at="2022-06-14T17:15:49 CEST" duration-ms="18882976">
       <class name="com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone">
-        <test-method is-config="true" signature="testSetup(org.testng.xml.XmlTest)[pri:0, instance:com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone@773e2eb5]" started-at="2022-06-14T12:56:12 CEST" name="testSetup" finished-at="2022-06-14T12:56:12 CEST" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="testSetup(org.testng.xml.XmlTest)[pri:0, instance:com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone@6b760460]" started-at="2022-06-14T12:01:06 CEST" name="testSetup" finished-at="2022-06-14T12:01:06 CEST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.indra.cilantrum.framework.build.CilantrumXmlTest@720c064c]]>
+                <![CDATA[com.indra.cilantrum.framework.build.CilantrumXmlTest@f5277d8a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method signature="test()[pri:0, instance:com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone@773e2eb5]" started-at="2022-06-14T12:56:12 CEST" name="test" finished-at="2022-06-14T12:56:23 CEST" duration-ms="10629" status="PASS">
+        <test-method signature="test()[pri:0, instance:com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone@6b760460]" started-at="2022-06-14T12:01:06 CEST" name="test" finished-at="2022-06-14T17:15:49 CEST" duration-ms="18882739" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException
+at com.indra.cilantrum.framework.api.test.CilantrumTest.test(CilantrumTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at com.indra.cilantrum.framework.build.Build.execute(Build.java:118)
+at com.indra.cilantrum.framework.main.Main.executeBuild(Main.java:254)
+at com.indra.cilantrum.framework.main.Main.main(Main.java:72)
+at com.indra.cilantrum.framework.main.Main.launchBuild(Main.java:104)
+at com.indra.main.ejercicioVodafone.main.LaunchEjercicioVodafone.main(LaunchEjercicioVodafone.java:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="testTeardown(org.testng.ITestContext)[pri:0, instance:com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone@773e2eb5]" started-at="2022-06-14T12:56:23 CEST" name="testTeardown" finished-at="2022-06-14T12:56:23 CEST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="testTeardown(org.testng.ITestContext)[pri:0, instance:com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone@6b760460]" started-at="2022-06-14T17:15:49 CEST" name="testTeardown" finished-at="2022-06-14T17:15:49 CEST" duration-ms="161" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@40017e98]]>
+                <![CDATA[org.testng.TestRunner@21422231]]>
               </value>
             </param>
           </params>
