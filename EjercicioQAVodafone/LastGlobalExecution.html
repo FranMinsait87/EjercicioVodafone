@@ -942,13 +942,13 @@ h1 {
 	                    		<tr>
 	                    			<td style='width:50%'>
 	                    				<div class="test-info">
-	                    					<b>Started at:</b> &nbsp; 14-06-2022 12:01:06
+	                    					<b>Started at:</b> &nbsp; 16-06-2022 09:23:55
 				                        </div>
 	                    			</td>
 	                    			<td style='width:50%'>
 	                    				<div class="test-info">
 	                    					<b>Total duration:</b> 	
-	05:14:42
+	00:00:04
 
 				                        </div>
 	                    			</td>
@@ -956,7 +956,7 @@ h1 {
 	                    		<tr>
 	                    			<td style='width:50%'>
 	                    				<div class="test-info">
-	                    					<b>Finished at:</b> 14-06-2022 17:15:50
+	                    					<b>Finished at:</b> 16-06-2022 09:24:00
 				                        </div>
 	                    			</td>
 	                    			<td style='width:50%'>
@@ -988,7 +988,7 @@ h1 {
 	                                            <td>1</td>
 	                                            <td>0</td>
 	                                            <td>	
-	05:14:42
+	00:00:04
 </td>
 	                                        </tr>
                                     </tbody>
@@ -1000,7 +1000,7 @@ h1 {
                                             <th>1</th>
                                             <th>0</th>
                                             <th>	
-	05:14:42
+	00:00:04
 </th>
                                         </tr>
                                     </tfoot>
@@ -1039,10 +1039,10 @@ h1 {
 	                            <tbody>
 	                            	<tr class='tests-list'>
 	                                    <td class='test-item failed'><a href='#TC001 - Ejercicios QA Vodafone on CHROME' title='TC001 - Ejercicios QA Vodafone on CHROME'>TC001 - Ejercicios QA Vodafone on CHROME</a></td>
-	                                    <td class='date'>14-06-2022 12:01:06</td>
-	                                    <td class='date'>14-06-2022 17:15:49</td>
+	                                    <td class='date'>16-06-2022 09:23:55</td>
+	                                    <td class='date'>16-06-2022 09:24:00</td>
 	                                    <td>	
-	00:00:42
+	00:00:04
 </td>
 	                                </tr>
 	                            </tbody>
@@ -1053,24 +1053,24 @@ h1 {
 		                            <span class='test-status text-failed'>FAILED</span>
 		                        </div><h1>TC001 - Ejercicios QA Vodafone on CHROME</h1>
 		                        <div class="test-info">
-		                            Started at: &nbsp; 14-06-2022 12:01:06
+		                            Started at: &nbsp; 16-06-2022 09:23:55
 		                        </div>
 		                        <div class="test-info">
-		                            Finished at: 14-06-2022 17:15:49
+		                            Finished at: 16-06-2022 09:24:00
 		                        </div>
 		                        <div class="test-info">
 		                            Duration: &nbsp; &nbsp; 	
-	00:00:42
+	00:00:04
 
 		                        </div>
 		                        <div class="test-info">
 		                            Description: Buscador de criptomonedas
 		                        </div>
 		                        	<div class='test-info text-failed'>
-		                    			Error category: Review execution
+		                    			Error category: Error de datos
 		                    		</div>
 		                    		<div class='test-info text-failed'>
-		                    			Detail of the failure: There is no driver integrity
+		                    			Detail of the failure: Los datos introducidos no son correctos.
 		                    		</div>
 		                        <div class='test-exec-message-title'>Execution steps</div>
 		                        <div class='messages'>
@@ -1079,14 +1079,99 @@ h1 {
 		                        			<span class='steps text-passed'>
 		                        				Step.1 - 
 		                        			</span>
-		                        				[14-06-2022 12:01:06]-Pedimos al usuario que introduzca en el buscador el tipo de criptomoneda
+		                        				[16-06-2022 09:23:55]-Pedimos al usuario que introduzca en el buscador el tipo de criptomoneda
+		                        		</li>
+	                        		</ul>
+	                        		<ul>
+		                        		<li class='test-message'>
+		                        			<span class='steps text-passed'>
+		                        				Step.2 - 
+		                        			</span>
+		                        				[16-06-2022 09:23:57]-El usuario ha introducido <b>'pepe'</b> como criterio de búsqueda
+		                        		</li>
+	                        		</ul>
+	                        		<ul>
+		                        		<li class='test-message'>
+		                        			<span class='steps text-passed'>
+		                        				Step.3 - 
+		                        			</span>
+		                        				[16-06-2022 09:23:57]-Se ejecuta la llamada al servicio con el criterio de búsqueda <b>'pepe'</b> como parámetro
+		                        		</li>
+	                        		</ul>
+	                        		<ul>
+		                        		<li class='test-message'>
+		                        			<span class='steps text-passed'>
+		                        				Step.4 - 
+		                        			</span>
+		                        				[16-06-2022 09:23:57]-Sending [GET] request.
+			                        			<div class='relative-container' style='position:relative'>
+			                        				<span class='plus-stacktrace' style='left: 7em;top:-30px'></span>
+													<p>
+														<u>
+															<b>Request info:</b>
+														</u>
+													</p>
+													<div class="web-service-container hide">
+														<p><b>-Endpoint : </b>https://api.coingecko.com/api/v3/coins/pepe</p>
+													</div>
+												</div>
+													<div class='relative-container' style='position:relative'>
+														<span class='plus-stacktrace' style='left: 7em;top:-30px'></span>
+														<p>
+															<u>
+																<b>Response info:</b>
+															</u>
+														</p>
+														<div class="web-service-container hide">
+															<p><b>-Status line : </b>404 - HTTP/1.1 404 Not Found</p>
+															<p><b>-Content-type : </b>application/json; charset=utf-8</p>
+															<p><b>-Headers : </b></p>
+															<div>
+																<ul>
+																   <li><b>Transfer-Encoding</b> - chunked</li>
+																   <li><b>CF-Ray</b> - 71c1cd9c5ef965fa-MAD</li>
+																   <li><b>Server</b> - cloudflare</li>
+																   <li><b>Access-Control-Allow-Origin</b> - *</li>
+																   <li><b>X-Request-Id</b> - 0915aa4a-f17c-4ee7-be0b-55fc1e2e5b9e</li>
+																   <li><b>Access-Control-Allow-Methods</b> - POST, PUT, DELETE, GET, OPTIONS</li>
+																   <li><b>X-Runtime</b> - 0.005878</li>
+																   <li><b>Connection</b> - keep-alive</li>
+																   <li><b>Date</b> - Thu, 16 Jun 2022 07:23:58 GMT</li>
+																   <li><b>Access-Control-Allow-Headers</b> - Origin, X-Requested-With, Content-Type, Accept, Authorization</li>
+																   <li><b>CF-Cache-Status</b> - MISS</li>
+																   <li><b>Access-Control-Expose-Headers</b> - link, per-page, total</li>
+																   <li><b>Cache-Control</b> - no-cache</li>
+																   <li><b>Access-Control-Request-Method</b> - *</li>
+																   <li><b>Content-Encoding</b> - gzip</li>
+																   <li><b>Set-Cookie</b> - datadome=6UU0nBp5a9-QO-UJPI7AvYDtN9x2eqfReXMZqz~yVhS39BH2CKAdq.3zCk6k-UeGE2.Pf.HDCyY.bsb2KdDl.XEwCy3525V_DNiA5g~HEDI0RGIX6z0dzrLPPlGQDCk; Max-Age=31536000; Domain=.coingecko.com; Path=/; Secure; SameSite=Lax</li>
+																   <li><b>Vary</b> - Accept-Encoding, Origin</li>
+																   <li><b>Accept-CH</b> - Sec-CH-UA,Sec-CH-UA-Mobile,Sec-CH-UA-Platform,Sec-CH-UA-Arch,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-Device-Memory</li>
+																   <li><b>X-DataDome</b> - protected</li>
+																   <li><b>Content-Type</b> - application/json; charset=utf-8</li>
+																   <li><b>Expect-CT</b> - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"</li>
+																</ul>
+															</div>
+															<p><b>-Body : </b></p>
+															<pre class="web-service-body"><code>{
+  "error": "Could not find coin with the given id"
+}</code></pre>
+														</div>
+													</div>
+		                        		</li>
+	                        		</ul>
+	                        		<ul>
+		                        		<li class='test-message'>
+		                        			<span class='steps text-failed'>
+		                        				Step.5 - 
+		                        			</span>
+		                        				[16-06-2022 09:23:58]-Reporting error: El código del servicio es: <b>404</b>. El activo <b>'pepe'</b> no existe.
 		                        		</li>
 	                        		</ul>
 		                        </div>
 		                        	<span class='plus-stacktrace'></span>
 			                        <div class='test-exec-message-title'>Exception</div>
 			                        <div class='stacktrace hide'>
-			                        	java.lang.RuntimeException
+			                        	java.lang.RuntimeException: Los datos introducidos no son correctos.
 	at com.indra.cilantrum.framework.api.test.CilantrumTest.test(CilantrumTest.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -1117,7 +1202,7 @@ h1 {
 	at com.indra.cilantrum.framework.main.Main.executeBuild(Main.java:254)
 	at com.indra.cilantrum.framework.main.Main.main(Main.java:72)
 	at com.indra.cilantrum.framework.main.Main.launchBuild(Main.java:104)
-	at com.indra.main.ejercicioVodafone.main.LaunchEjercicioVodafone.main(LaunchEjercicioVodafone.java:12)
+	at com.indra.main.ejercicioVodafone.main.LaunchEjercicio1_Cilantrum.main(LaunchEjercicio1_Cilantrum.java:12)
 
 			                        </div>
 		                    </div>
@@ -1335,7 +1420,7 @@ h1 {
         data: { 
           labels: ['','EJERCICIOVODAFONE',''], 
           datasets: [{ 
-            data: [null, '18882',null], 
+            data: [null, '4',null], 
             label: 'Time in seconds', 
             borderColor: 'rgb(75, 192, 192)', 
             backgroundColor: 'rgba(0,250,250,0.4)',
@@ -1387,7 +1472,7 @@ h1 {
                         yAxesticks = values;
                         return value;
                     },
-                    max: 21714
+                    max: 4
                 }
             }]
           },

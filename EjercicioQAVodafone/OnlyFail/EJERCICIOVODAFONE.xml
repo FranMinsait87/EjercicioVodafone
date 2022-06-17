@@ -52,7 +52,7 @@
     <parameter name="metodo" value="api/v3/coins/"/>
     <parameter name="TAGS" value="[QAVodafone]"/>
     <classes>
-      <class name="com.indra.main.ejercicioVodafone.ejercicio1.TC_EjercicioVodafone"/>
+      <class name="com.indra.main.ejercicioVodafone.ejercicio1_Cilantrum.TC_EjercicioVodafone"/>
     </classes>
   </test> <!-- TC001 - Ejercicios QA Vodafone on CHROME -->
 </suite> <!-- EJERCICIOVODAFONE -->
